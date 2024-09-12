@@ -531,6 +531,9 @@ button:hover {
     flex-shrink: 0;
     transition: transform 0.4s ease-in-out;
 }
+.about-content:hover img.image1 {
+    transform:skewX(20deg);
+}
 
 .about-content:hover img {
     transform:skewY(20deg);
