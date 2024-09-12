@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Verification</title>
+    <link rel="stylesheet" href="css/verifyStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+        <img src="imgs/LOGO_GCB-removebg-preview.png" alt="Logo" id="logo">
+        </nav>
+    </header>
+    <section id="certificate-verification">
+        <h2>Certificate Verification</h2>
+        <form id="verificationForm">
+            <div class="form-group">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" required>
+            </div>
+            <div class="form-group">
+                <label for="coursePw">Course Password:</label>
+                <input type="password" id="coursePw" required>
+            </div>
+            <div class="form-group">
+                <label for="certificateNo">Certificate No:</label>
+                <input type="text" id="certificateNo" required>
+            </div>
+            <button type="submit">Enter</button>
+            <a href="index.html" class="back-button">Back</a>
+        </form>
+
+        <!-- Table to display certificate details -->
+        <table id="certificateDetails" class="hidden">
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Student Status</th>
+                    <th>Certificate No</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td>
+                        <a href="imgs/cert6.png" download="certificate.jpg">
+                            <img src="imgs/cert6.png" alt="Certificate" class="certificate-img">
+                            </a>
+                        </td>
+                  
+                        
+                    <td>2024-01-01</td>
+                    <td>2024-12-31</td>
+                    <td>pass</td>
+                    <td>123456</td>
+                    <td>shaimaa</td>
+                    <td>iso 9001</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="js/verify.js"></script>
+</body>
+</html>
